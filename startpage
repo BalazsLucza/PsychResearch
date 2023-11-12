@@ -7,15 +7,15 @@
 </head>
 <body>
 
-<p>Click the link to be redirected:</p>
+<p>This is the start page for a Research Survey for Psychology 074 class at LACC. To proceed click the link below:</p>
 <a id="rotatingLink" href="#" onclick="rotateLink()">Click me!</a>
 
 <script>
   var links = [
-    'https://example.com/link1',
-    'https://example.com/link2',
-    'https://example.com/link3',
-    'https://example.com/link4'
+    'https://forms.gle/CdMFVzwSNdvqVdQn6',
+    'https://forms.gle/5MUDfVc6rM54pt7p6',
+    'https://forms.gle/6NgJxnbyeWyBAvum8',
+    'https://forms.gle/tSojCX4kLvwuJ8vx6'
   ];
 
   var currentIndex = 0;
