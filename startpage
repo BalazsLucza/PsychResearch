@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link Rotator</title>
+</head>
+<body>
+
+<p>Click the link to be redirected:</p>
+<a id="rotatingLink" href="#" onclick="rotateLink()">Click me!</a>
+
+<script>
+  var links = [
+    'https://example.com/link1',
+    'https://example.com/link2',
+    'https://example.com/link3',
+    'https://example.com/link4'
+  ];
+
+  var currentIndex = 0;
+
+  function rotateLink() {
+    window.location.href = links[currentIndex];
+    currentIndex = (currentIndex + 1) % links.length;
+  }
+</script>
+
+</body>
+</html>
+
+
+
