@@ -21,6 +21,7 @@
   var currentIndex = 0;
 
   function rotateLink() {
+    document.getElementById('indexDisplay').innerText = 'Current Index: ' + currentIndex;
     window.location.href = links[currentIndex];
     currentIndex = (currentIndex + 1) % links.length;
     console.log('New Index:', currentIndex);
