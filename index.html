@@ -23,6 +23,7 @@
   function rotateLink() {
     window.location.href = links[currentIndex];
     currentIndex = (currentIndex + 1) % links.length;
+    console.log('New Index:', currentIndex);
     return false; // This prevents the default link behavior
   }
 </script>
