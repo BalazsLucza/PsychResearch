@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Link Rotator</title>
+  <title>Psychology Research Start Page</title>
 </head>
 <body>
 
 <p>This is the start page for a Research Survey for the Psychology 074 - Research Methods in Behavioral Sciences class at LACC. To proceed click the link below:</p>
-<a id="rotatingLink" href="#" onclick="rotateLink()">Click me!</a>
+<a id="rotatingLink" href="#">Click here to proceed!</a>
 <p id="indexDisplay">Current Index: 0</p>
 
 <script>
@@ -25,13 +25,14 @@
     document.getElementById('indexDisplay').innerText = 'Current Index: ' + currentIndex;
     window.open(links[currentIndex], '_blank');
     currentIndex = (currentIndex + 1) % links.length;
-    console.log('New Index:', currentIndex);
-    return false; // This prevents the default link behavior
   }
+
+  // Add event listener after the DOM has loaded
+  document.addEventListener('DOMContentLoaded', function () {
+    var rotatingLink = document.getElementById('rotatingLink');
+    rotatingLink.addEventListener('click', rotateLink);
+  });
 </script>
 
 </body>
 </html>
-
-
-
